@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Student Results</title></head>
+<body>
+    <h2>Submitted Students Records</h2>
+    <table border="1" cellpadding="5">
+        <tr><th>Name</th><th>Roll</th><th>Phone</th><th>CGPA</th><th>Degree</th></tr>
+        {% for s in students %}
+        <tr>
+            <td>{{ s.name }}</td><td>{{ s.roll }}</td><td>{{ s.phone }}</td><td>{{ s.cgpa }}</td><td>{{ s.degree }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back to Entry Form</a>
+</body>
+</html>
